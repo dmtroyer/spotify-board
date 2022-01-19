@@ -2,7 +2,15 @@
 
 ## raspotify/librespot
 
-1. Run the raspotify service as root by commenting out `DynamicUser=yes` in `/lib/systemd/system/raspotify.service`
+1. Run the raspotify service as root by running `sudo systemctl edit raspotify.service` and adding the following between the comments
+
+    ```
+    [Service]
+    DynamicUser=no
+    ```
+    
+    Restart raspotify with `sudo service raspotify restart`
+    
 
 ## Links
 
