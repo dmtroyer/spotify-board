@@ -39,7 +39,7 @@ while True:
             # Make image fit our screen.
             offscreen_canvas = matrix.CreateFrameCanvas()
             font = graphics.Font()
-            font.LoadFont("comic-sans-20.bdf")
+            font.LoadFont("fonts/comic-sans-20.bdf")
             textColor = graphics.Color(255, 255, 255)
             pos = offscreen_canvas.width
 
